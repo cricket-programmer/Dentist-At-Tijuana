@@ -17,11 +17,59 @@ body {
 	font-size: 16px!important;
 }
 
+#header-mobile {
+	display: none;
+}
+
 table th {
 	background: #00acee;
 	color: #FFF;
 }
-
+form.wpcf7-form .form-title {
+	background: #003967;
+    color: #fff!important;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 10px 10px 0 0;
+}
+form.wpcf7-form {
+	display: block!important;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    background: #f4f4f4;
+    border-radius: 0 0 10px 10px;
+}
+form.wpcf7-form p {
+	padding: 10px 30px;
+    box-sizing: border-box;
+}
+form.wpcf7-form input,
+form.wpcf7-form textarea {
+	background: #e9edf4;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+}
+form.wpcf7-form input[type="submit"] {
+	display: block;
+    background: #b0ec2a;
+    font-weight: bold;
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: #b4bac5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #b4bac5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #b4bac5;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #b4bac5;
+  opacity: 1;
+}
 #header h1{ 
 	font-size: 4em;
 	font-weight: bold;
@@ -62,4 +110,43 @@ table th {
 	color: #fff!important;
     margin-bottom: 7px;
     display: block;
+}
+
+
+/**/
+@media screen and (max-width: 1680px) {
+	#header h1{ 
+	font-size: 3em;
+ }
+}
+@media screen and (max-width: 1370px) {
+	#header h1{ 
+	font-size: 3em;
+ }
+}
+@media screen and (max-width: 1280px) {
+	#header { 
+	display: none;
+ 	}
+ 	#header-mobile {
+ 		display: block;
+ 	}
+ 	#header-mobile .vc_single_image-wrapper,
+ 	#header-mobile .wpb_single_image {
+ 		margin-bottom: 0!important;
+ 	}
+ 	#header-mobile h2 {
+ 		text-align: center;
+	    font-size: 2em;
+	    line-height: 1em;
+	    padding: 0 10px;
+ 	}
+ 	.schedule h2 {
+ 		font-size: 3.5em!important;
+ 	}
+}
+@media screen and (max-width: 500px) {
+	form.wpcf7-form {
+    	width: 100%;
+	}
 }
