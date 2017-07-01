@@ -116,12 +116,17 @@ form.wpcf7-form input[type="submit"] {
 /**/
 @media screen and (max-width: 1680px) {
 	#header h1{ 
-	font-size: 3em;
+	font-size: 2.5em;
  }
 }
 @media screen and (max-width: 1370px) {
 	#header h1{ 
-	font-size: 3em;
+	font-size: 2em;
+ }
+ #header p {
+  max-width: 60%;
+  color: #fff;
+  font-size: 1em;
  }
 }
 @media screen and (max-width: 1280px) {
